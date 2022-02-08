@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>또래상담 홈페이지</title>
+    <style>
+        /*full-size*/
+        @media screen and (min-width:960px){
+            body{
+            background-image: url('back.jpg');
+            background-size: 100% 250px;
+            background-repeat: no-repeat; }
+
+            div{
+                padding-top: 250px;
+            }
+
+            table, tr, td{
+                border: 1px solid #bcbcbc;
+            }
+
+            table{
+                width: 100%;
+                text-align: center;
+            }
+
+            ul{
+                list-style: none;
+                display: table;
+                margin: 0 auto;
+            }
+
+            img{display: block; margin: 0px auto; }
+
+            #box{
+                border-width: thin;
+                border-style: dashed;
+                border-color: black;
+            }
+        }
+        /*half-size*/
+        @media screen and (min-width: 768px) and (max-width: 959px){
+            body{
+                background-image: url('back.jpg');
+                background-image: auto;
+                background-repeat: no-repeat;
+            }
+
+            div{
+                padding-top: 200px;
+            }
+
+            table, tr, td{
+                border: 1px solid #bcbcbc;
+            }
+
+            table{
+                width: 100%;
+                text-align: center;
+            }
+
+            ul{
+                list-style: none;
+                display: table;
+                margin: 0 auto;
+            }
+
+            img{display: block; margin: 0px auto; }
+
+            #box{
+                border-width: thin;
+                border-style: dashed;
+                border-color: black;
+            }
+        }
+        /*small size*/
+        @media screen and (max-width:767px) {
+            body{
+                background-image: url(back.jpg);
+                background-image: auto;
+                background-repeat: no-repeat;
+            }
+
+            div{
+                padding-top: 200px;
+            }
+
+            table, tr, td{
+                border: 1px solid #bcbcbc;
+            }
+
+            table{
+                width: 100%;
+                text-align: center;
+            }
+
+            ul{
+                list-style: none;
+                display: table;
+                margin: 0 auto;
+            }
+
+            img{display: block; margin: 0px auto; }
+
+            #box{
+                border-width: thin;
+                border-style: dashed;
+                border-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>또래상담이란?</h2>
+        <p id="box">친구의 어려움을 들어주는 또래상담자와 매칭이 되어 또래상담을 실시하는 것입니다! <br>상담 양성교육을 학습한 또래상담자가 또래 친구들의 고민이나 어려움을 들어줍니다. 또래 내담자가 스스로 어려움을 해결해 나갈 수 있도록 도와줍니다!<br>
+            경영회계학과, 정보통신공학과, 중국어과 등 16개 학과 22명의 또래상담자가 활동 중 입니다. 학군단 또래상담자도 있습니다. 한국어로 의사소통이 가능한 유학생도 얼마든지 또래상담을 신청할 수 있습니다!<br>
+            또래상담자들은 정기적으로 교육을 실시하고 심리상담 전문가로부터 피드백과 사례지도를 받아 또래상담을 진행합니다. <br>
+            또래 친구에게 고민을 이야기하므로서 고민도 해결하고 진짜 친구가 될 수 있는 기회! <br>
+            또래상담 내용은 비밀 보장을 원칙으로 합니다!!<br>
+            3회 이상 참여시 1unit도 받을 수 있다는 점(소근소근) <br>
+            많은 신청 바랍니다 :)
+            <br><br>
+            문의 : 042-828-8630(한밭대학교 학생상담센터 프로그램 담당자)
+        </p>
+        <br>
+        <h2>신청</h2>
+        <fieldset>
+            <legend>신청 양식</legend>
+            <table style="border: 1px solid; border-collapse: collapse;">
+                <!--1행-->
+                <tr>
+                    <td><label for="name">이 름</label></td>
+                    <td>
+                        <input id="name" type="text">
+                    </td>
+                </tr>
+                <!--2행-->
+                <tr>
+                    <td><label for="gender">성 별</label></td>
+                    <td>
+                        <input type="radio" id="man" name="gender">
+                        <label for="man">남자</label>
+    
+                        <input type="radio" id="woman" name="gender">
+                        <label for="woman">여자</label>
+                    </td>
+                </tr>
+                <!--3행-->
+                <tr>
+                    <td><label for="age">나 이</label></td>
+                    <td>
+                        <input type="text" id="age">
+                    </td>
+                </tr>
+                <!--4행-->
+                <tr>
+                    <td><label for="major">학과</label></td>
+                    <td>
+                        <input type="text" id="major">
+                    </td>
+                </tr>
+                <!--5행-->
+                <tr>
+                    <td><label for="id">학번</label></td>
+                    <td><input type="text" id="id"></td>
+                </tr>
+                <!--6행-->
+                <tr>
+                    <td><label for="num">전화번호</label></td>
+                    <td><form name="해당폼의이름" action="값을 보낼 주소" method="post">
+                    <input type="tel" name="phone1"/>-
+                    <input type="tel" name="phone2"/>-
+                    <input type="tel" name="phone3"/>
+                    </form></td>
+                </tr>
+                <!--7행-->
+                <tr>
+                    <td><label for="message">또래상담 신청 사유</label></td>
+                    <td><textarea name="" id="message" cols="30" rows="10"></textarea></td>
+                </tr>
+                <!--8행-->
+                <tr>
+                    <td><label for="sign">개인 정보 동의</label></td>
+                    <td>
+                        <a href="#info">개인정보 동의서 보기</a><br>
+                        <input type="radio" id="agree" name="sign">
+                        <label for="agree">동의</label>
+
+                        <input type="radio" id="disagree" name="sign">
+                        <label for="disagree">비동의</label>
+                    </td>
+                </tr>
+                <!--9행 제출버튼-->
+                <tr>
+                    <td colspan="2 "><input type="submit"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br><br>
+        <h2>또래상담자 소개</h2>
+        <center>
+            <table style="border: 1px solid; border-collapse: collapse;">
+                <tr>
+                    <td>
+                        <img src="sudal.jpg" alt="error">
+                        <ul>
+                            <li>이름 : 홍길동</li>
+                            <li>학과 : 정보통신공학과</li>
+                            <li>학년 : 3학년</li>
+                            <li><a href="https://www.hanbat.ac.kr/kor/sub06_0501.do">오픈채팅방</a></li>
+                        </ul>
+                    </td>
+    
+                    <td>
+                        <img src="mouse.jpg" alt="error">
+                        <ul>
+                            <li>이름 : 김철수</li>
+                            <li>학과 : 전기공학과</li>
+                            <li>학년 : 2학년</li>
+                            <li><a href="https://www.hanbat.ac.kr/kor/sub06_0501.do">오픈채팅방</a></li>
+                        </ul>
+                    </td>
+    
+                    <td>
+                        <img src="purple.jpg" alt="error">
+                        <ul>
+                            <li>이름 : 한유리</li>
+                            <li>학과 : 중국어과</li>
+                            <li>학년 : 1학년</li>
+                            <li><a href="https://www.hanbat.ac.kr/kor/sub06_0501.do">오픈채팅방</a></li>
+                        </ul>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <img src="rabbit.jpg" alt="error">
+                        <ul>
+                            <li>이름 : 이훈이</li>
+                            <li>학과 : 컴퓨터공학과</li>
+                            <li>학년 : 2학년</li>
+                            <li><a href="https://www.hanbat.ac.kr/kor/sub06_0501.do">오픈채팅방</a></li>
+                        </ul>
+                    </td>
+    
+                    <td>
+                        <img src="pig.jpg" alt="error">
+                        <ul>
+                            <li>이름 : 김맹구</li>
+                            <li>학과 : 일본어과</li>
+                            <li>학년 : 2학년</li>
+                            <li><a href="https://www.hanbat.ac.kr/kor/sub06_0501.do">오픈채팅방</a></li>
+                        </ul>
+                    </td>
+    
+                    <td>
+                        <img src="bear.jpg" alt="error">
+                        <ul>
+                            <li>이름 : 김영희</li>
+                            <li>학과 : 경제학과</li>
+                            <li>학년 : 3학년</li>
+                            <li><a href="https://www.hanbat.ac.kr/kor/sub06_0501.do">오픈채팅방</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br><br>
+        <h2 id="info">개인정보 동의서</h2>
+        <img src="info.PNG" alt="동의서">
+        <h6 align="center">사진 출처 : 학생상담센터-또래상담 신청 폼 https://forms.gle/yBSD3FMCkgcbbenK9</h6>
+    </div>
+</body>
+</html>
